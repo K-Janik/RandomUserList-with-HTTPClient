@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th id="click-me">Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th class="toggleDisplay">Email</th>
+            <th class="toggleDisplay">Phone Number</th>
+            <th class="toggleDisplay">Social Insurance Nr</th>
+            <th class="toggleDisplay">Employment</th>
+          </tr>
+          </thead>
+          <tbody *ngFor="let person of persons">
+          <tr>
+            <th scope="row" ></th>
+            <td>{{person.first_name}}</td>
+            <td>{{person.last_name}}</td>
+            <td>{{person.username}}</td>
+            <td class="toggleDisplay">{{person.email}}</td>
+            <td class="toggleDisplay">{{person.phone_number}}</td>
+            <td class="toggleDisplay">{{person.social_insurance_number}}</td>
+            <td class="toggleDisplay">{{person.employment}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
