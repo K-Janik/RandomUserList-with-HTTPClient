@@ -9,6 +9,7 @@
 - Bootstrap 4
 - Spring Boot 2 - version 2.4.5
 - Angular CLI - version 11.2.13
+- RestTemplate class
 
 
 ## Features
